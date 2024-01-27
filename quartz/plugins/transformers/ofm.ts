@@ -108,8 +108,7 @@ const calloutMapping: Record<string, keyof typeof callouts> = {
 
 function canonicalizeCallout(calloutName: string): keyof typeof callouts {
   let callout = calloutName.toLowerCase() as keyof typeof calloutMapping
-  // if callout is not recognized, make it a custom one
-  return calloutMapping[callout] ?? calloutName
+  return calloutMapping[callout] ?? "note"
 }
 
 export const externalLinkRegex = /^https?:\/\//i
@@ -432,7 +431,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                   value: `<div
                   class="callout-title"
                 >
-                  <div class="callout-icon">${callouts[calloutType] ?? callouts.note}</div> 
+                  <div class="callout-icon">${callouts[calloutType]}</div>
                   <div class="callout-title-inner">${title}</div>
                   ${collapse ? toggleIcon : ""}
                 </div>`,
@@ -458,7 +457,7 @@ export const ObsidianFlavoredMarkdown: QuartzTransformerPlugin<Partial<Options> 
                 node.data = {
                   hProperties: {
                     ...(node.data?.hProperties ?? {}),
-                    className: `callout ${calloutType} ${collapse ? "is-collapsible" : ""} ${
+                    className: `callout ${collapse ? "is-collapsible" : ""} ${
                       defaultState === "collapsed" ? "is-collapsed" : ""
                     }`,
                     "data-callout": calloutType,

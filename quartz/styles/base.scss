@@ -44,11 +44,12 @@ ul,
 .math {
   color: var(--darkgray);
   fill: var(--darkgray);
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
   hyphens: auto;
 }
 
 .math {
+  font-size: 1rem;
   &.math-display {
     text-align: center;
   }
@@ -356,7 +357,6 @@ pre {
     counter-increment: line 0;
     display: grid;
     padding: 0.5rem 0;
-    overflow-x: scroll;
 
     & [data-highlighted-chars] {
       background-color: var(--highlight);
@@ -476,7 +476,7 @@ video {
 
 ul.overflow,
 ol.overflow {
-  max-height: 400;
+  max-height: 350px;
   overflow-y: auto;
 
   // clearfix
