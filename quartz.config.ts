@@ -3,13 +3,13 @@ import * as Plugin from "./quartz/plugins"
 
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "jzhao.xyz",
+    pageTitle: "ZonaTXT",
     enableSPA: true,
     enablePopovers: true,
     analytics: {
       provider: "plausible",
     },
-    baseUrl: "jzhao.xyz",
+    baseUrl: "zonatxt.github.io",
     ignorePatterns: ["private", "templates"],
     defaultDateType: "created",
     theme: {
