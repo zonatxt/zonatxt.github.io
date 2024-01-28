@@ -6,12 +6,7 @@ import { SimpleSlug } from "./quartz/util/path"
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
-  footer: Component.Footer({
-    links: {
-      GitHub: "https://github.com/jackyzha0",
-      Twitter: "https://twitter.com/_jzhao",
-    },
-  }),
+  footer: Component.Footer(),
 }
 
 // components for pages that display a single page (e.g. a single note)
@@ -29,21 +24,22 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Darkmode(),
     Component.DesktopOnly(
       Component.RecentNotes({
-        title: "Recent Writing",
-        limit: 4,
-        filter: (f) =>
-          f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
-        linkToMore: "posts/" as SimpleSlug,
-      }),
-    ),
-    Component.DesktopOnly(
-      Component.RecentNotes({
         title: "Recent Notes",
-        limit: 2,
-        filter: (f) => f.slug!.startsWith("thoughts/"),
-        linkToMore: "thoughts/" as SimpleSlug,
+        limit: 3,
+        filter: (f) => f.slug!.startsWith("zettelkasten/"),
+        linkToMore: "zettelkasten/" as SimpleSlug,
       }),
     ),
+    Component.DesktopOnly(Component.Explorer()),
+    // Component.DesktopOnly(
+    //   Component.RecentNotes({
+    //     title: "Recent Writing",
+    //     limit: 4,
+    //     filter: (f) =>
+    //       f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
+    //     linkToMore: "posts/" as SimpleSlug,
+    //   }),
+    // ),
     Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
@@ -67,6 +63,7 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
+    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [],
 }
