@@ -1,2 +1,0 @@
-- [[orphaned files output.md]]
-- [[content/templates/notes.md]]

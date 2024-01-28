@@ -22,25 +22,15 @@ export const defaultContentPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
+    Component.DesktopOnly(Component.TableOfContents()),
     Component.DesktopOnly(
       Component.RecentNotes({
         title: "Recent Notes",
-        limit: 3,
-        filter: (f) => f.slug!.startsWith("zettelkasten/"),
-        linkToMore: "zettelkasten/" as SimpleSlug,
+        limit: 8,
+        filter: (f) => f.slug!.startsWith("Zettelkasten/"),
+        linkToMore: "Zettelkasten/" as SimpleSlug,
       }),
     ),
-    Component.DesktopOnly(Component.Explorer()),
-    // Component.DesktopOnly(
-    //   Component.RecentNotes({
-    //     title: "Recent Writing",
-    //     limit: 4,
-    //     filter: (f) =>
-    //       f.slug!.startsWith("posts/") && f.slug! !== "posts/index" && !f.frontmatter?.noindex,
-    //     linkToMore: "posts/" as SimpleSlug,
-    //   }),
-    // ),
-    Component.DesktopOnly(Component.TableOfContents()),
   ],
   right: [
     Component.Graph({
@@ -63,7 +53,6 @@ export const defaultListPageLayout: PageLayout = {
     Component.MobileOnly(Component.Spacer()),
     Component.Search(),
     Component.Darkmode(),
-    Component.DesktopOnly(Component.Explorer()),
   ],
   right: [],
 }
