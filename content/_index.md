@@ -12,7 +12,12 @@ tags:
 - [Sistemas Operacionais](Zettelkasten/Sistemas%20Operacionais.md)
 - [Markdown Guide](Zettelkasten/Markdown%20Guide.md)
 
-
+## fdsfsdf
 - [[Markdown Guide]]
 - [[Zettelkasten/Markdown Guide|Markdown Guide]]
 - [[content/Zettelkasten/Markdown Guide|Markdown Guide]]
+
+### fdsfdsfds
+[Markdown Guide](Markdown%20Guide.md)
+[Markdown Guide](Zettelkasten/Markdown%20Guide.md)
+[Markdown Guide](content/Zettelkasten/Markdown%20Guide.md)
