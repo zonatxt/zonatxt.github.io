@@ -13,5 +13,5 @@ tags:
 - [Markdown Guide](content/zettelkasten/Markdown%20Guide.md)
 
 # fdfdfdsfds
-[Markdown Guide](Markdown%20Guide.md)
-[[Markdown Guide]]
+[[zettelkasten/Markdown Guide|Markdown Guide]]
+
