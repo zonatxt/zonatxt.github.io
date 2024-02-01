@@ -8,16 +8,16 @@ tags:
 >As suas ações tem de suportar suas ambições!
 
 ## Links Úteis
-- [Marketing Digital](Zettelkasten/Marketing%20Digital.md)
-- [Sistemas Operacionais](Zettelkasten/Sistemas%20Operacionais.md)
-- [Markdown Guide](Zettelkasten/Markdown%20Guide.md)
+- [Marketing Digital](content/zettelkasten/Marketing%20Digital.md)
+- [Sistemas Operacionais](content/zettelkasten/Sistemas%20Operacionais.md)
+- [Markdown Guide](content/zettelkasten/Markdown%20Guide.md)
 
 ## fdsfsdf
-- [[Markdown Guide]]
-- [[Zettelkasten/Markdown Guide|Markdown Guide]]
-- [[content/Zettelkasten/Markdown Guide|Markdown Guide]]
+- [[content/zettelkasten/Markdown Guide]]
+- [[content/zettelkasten/Markdown Guide|Markdown Guide]]
+- [[content/zettelkasten/Markdown Guide|Markdown Guide]]
 
 ### fdsfdsfds
-[Markdown Guide](Markdown%20Guide.md)
-[Markdown Guide](Zettelkasten/Markdown%20Guide.md)
-[Markdown Guide](content/Zettelkasten/Markdown%20Guide.md)
+[Markdown Guide](content/zettelkasten/Markdown%20Guide.md)
+[Markdown Guide](content/zettelkasten/Markdown%20Guide.md)
+[Markdown Guide](content/zettelkasten/Markdown%20Guide.md)
