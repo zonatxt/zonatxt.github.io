@@ -27,7 +27,7 @@ export const defaultContentPageLayout: PageLayout = {
       Component.RecentNotes({
         title: "Recent Notes",
         limit: 8,
-        filter: (f) => f.slug!.startsWith("Zettelkasten/"),
+        filter: (f) => f.slug!.startsWith("zettelkasten/"),
         linkToMore: "Zettelkasten/" as SimpleSlug,
       }),
     ),
